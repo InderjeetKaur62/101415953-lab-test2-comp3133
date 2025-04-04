@@ -1,0 +1,13 @@
+<mat-card *ngIf="character">
+    <mat-card-header>
+      <mat-card-title>{{ character.name }}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="character.image" alt="Character Image">
+    <mat-card-content>
+      <p>Species: {{ character.species }}</p>
+      <p>House: {{ character.house }}</p>
+      <p>Actor: {{ character.actor }}</p>
+      <p>Wand: {{ character.wand.wood }} wood, {{ character.wand.core }} core, {{ character.wand.length }} inches</p>
+    </mat-card-content>
+  </mat-card>
+  
